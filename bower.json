@@ -14,7 +14,6 @@
     "MutationObserver": "~0.2.0"
   },
   "license": "BSD",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
