@@ -31,11 +31,6 @@ module.exports = function(grunt) {
       prefix: '',
       commit: true
     },
-    exec: {
-      'update_master':{
-        cmd: 'git push origin master --tags'
-      }
-    },
     concat:{
       dist: {
         src: [
@@ -58,9 +53,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('build', ['smush-components','concat:dist']);
-  grunt.registerTask('bump:patch', ['bumpup:patch', 'tagrelease']);
-  grunt.registerTask('bump:push', ['bumpup:patch', 'tagrelease','push']);
-
-  grunt.registerTask('push', ['exec:update_master']);
 
 };
