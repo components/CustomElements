@@ -1,0 +1,24 @@
+{
+  "name": "custom-elements-polyfill",
+  "tagName": "custom-elements",
+  "version": "0.0.2",
+  "author": "Arron Schaar",
+  "description": "Wraps the CustomElement polyfill and makes it Bower consumable.",
+  "demo": "demo/index.html",
+  "compatibility": {
+    "firefox": 5,
+    "chrome": 4,
+    "ie": 9,
+    "opera": 12,
+    "android": 2.1,
+    "ios": 4
+  },
+  "documentation": {
+    "description": "Wraps the CustomElement polyfill and makes it Bower consumable.",
+    "attributes": {},
+    "events": {},
+    "methods": {},
+    "getters": {},
+    "setters": {}
+  }
+}

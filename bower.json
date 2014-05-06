@@ -1,0 +1,19 @@
+{
+  "name": "Custom-Elements",
+  "description": "Custom Element polyfill for Web Components.",
+  "version": "0.0.2",
+  "author": "Arron Schaar",
+  "keywords": [
+    "polyfill",
+    "web-components",
+    "x-tag"
+  ],
+  "main": [
+    "src/bootstrap.js",
+    "src/custom-elements.js"
+  ],
+  "dependencies": {
+    "MutationObserver": "~0.2.0",
+    "classlist": "*"
+  }
+}

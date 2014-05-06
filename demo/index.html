@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Custom Elements Polyfill - X-Tag</title>
+
+  <link rel="stylesheet" type="text/css" href="dependencies.css"/>
+  <link rel="stylesheet" type="text/css" href="../src/custom-elements.css"/>
+
+  <script type="text/javascript" src="dependencies.js"></script>
+  <script type="text/javascript" src="../src/bootstrap.js"></script>
+  <script type="text/javascript" src="../src/custom-elements.js"></script>
+
+
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body id="app">
+
+<x-foo alert="foobarz"></x-foo>
+
+</body>
+
+<script type="text/javascript">
+
+  var XFooPrototype = Object.create(HTMLElement.prototype);
+  XFooPrototype.createdCallback = function() {
+    this.textContent = "I'm an x-foo!";
+  };
+
+  XFooPrototype.foo = function() {
+    console.log(this.getAttribute('alert'));
+  };
+
+  var XFoo = document.registerElement('x-foo', {
+    prototype: XFooPrototype
+  });
+
+  document.addEventListener('WebComponentsReady', function(){
+    document.querySelector('x-foo').foo();
+  });
+
+</script>
+
+</html>

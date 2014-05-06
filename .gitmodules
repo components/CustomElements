@@ -1,0 +1,3 @@
+[submodule "CustomElements"]
+	path = CustomElements
+	url = https://github.com/Polymer/CustomElements.git
