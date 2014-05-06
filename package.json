@@ -1,7 +1,7 @@
 {
   "name": "custom-elements-polyfill",
   "description": "Wraps the CustomElement polyfill and makes it Bower consumable.",
-  "version": "0.0.2",
+  "version": "0.2.3",
   "author": "Arron Schaar",
   "dependencies": {},
   "devDependencies": {
