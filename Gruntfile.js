@@ -50,7 +50,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-smush-components');
   grunt.loadNpmTasks('grunt-tagrelease');
   grunt.loadNpmTasks('grunt-bumpup');
-  grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('build', ['smush-components','concat:dist']);
 
