@@ -34,6 +34,7 @@ module.exports = function(grunt) {
     concat:{
       dist: {
         src: [
+          'src/bootstrap.js',
           'CustomElements/src/Observer.js',
           'CustomElements/src/CustomElements.js',
           'CustomElements/src/Parser.js',
