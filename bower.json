@@ -8,10 +8,7 @@
     "web-components",
     "x-tag"
   ],
-  "main": [
-    "src/bootstrap.js",
-    "src/custom-elements.js"
-  ],
+  "main": "src/custom-elements.js",
   "dependencies": {
     "MutationObserver": "~0.2.0",
     "classlist": "*"
