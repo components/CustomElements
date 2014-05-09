@@ -12,5 +12,14 @@
   "dependencies": {
     "MutationObserver": "~0.2.0",
     "classlist": "*"
-  }
+  },
+  "ignore": [
+    ".gitignore",
+    ".gitmodules",
+    "CustomElements/",
+    "Gruntfile.js",
+    "demo/",
+    "package.json",
+    "xtag.json"
+  ]
 }
